@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+
+<div style="margin: 15% 40%;">
+    <form action="/register/" method="post">
+        {% if message %}
+        <div>{{ message }}</div>
+        {% endif %}
+        {% csrf_token %}
+
+        <h2 class="text-center">欢迎注册</h2>
+        <div>
+            {{ register_form.username.label_tag }}
+            {{ register_form.username}}
+        </div>
+        <div>
+            {{ register_form.password1.label_tag }}
+            {{ register_form.password1 }}
+        </div>
+        <div>
+            {{ register_form.password2.label_tag }}
+            {{ register_form.password2 }}
+        </div>
+        <div>
+            {{ register_form.email.label_tag }}
+            {{ register_form.email }}
+        </div>
+        <div>
+            {{ register_form.sex.label_tag }}
+            {{ register_form.sex }}
+        </div>
+        <div>
+            {{ register_form.captcha.errors }}
+            {{ register_form.captcha.label_tag }}
+            {{ register_form.captcha }}
+        </div>
+
+        <div><input type="submit" value="提交"></div>
+    </form>
+</div>
+
+</body>
+</html>
