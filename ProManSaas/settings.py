@@ -24,7 +24,7 @@ SECRET_KEY = 'k%w6f)h8)rfz88z9y2hk1am(45a2=x4v75l7fhck&a%*nuzk1@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['39.106.55.189','127.0.0.1']
+ALLOWED_HOSTS = ['39.106.55.189']
 
 # Application definition
 
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'app_home',
     'app_process',
     'app_question',
-    'captcha',
 ]
 
 MIDDLEWARE = [
