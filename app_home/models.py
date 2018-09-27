@@ -5,12 +5,12 @@ from django.db import models
 
 # 用户表
 class User(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=128, unique=True)  # 用户名
     password = models.CharField(max_length=128)  # 密码
     true_name = models.CharField(max_length=128, verbose_name='真实姓名')
     email = models.EmailField(verbose_name='邮箱', unique=True)
-    head_icon = models.ImageField(upload_to='', verbose_name='头像')  # 配置问题待讨论
+    head_icon = models.ImageField(upload_to='uploads/', verbose_name='头像')  # 配置问题待讨论
     notice = models.PositiveIntegerField(verbose_name='通知数', default=0, auto_created=True)
     un_answer = models.PositiveIntegerField(verbose_name='未回答问题数', default=0, auto_created=True)
     answer_notice = models.PositiveIntegerField(verbose_name='回答通知数', default=0, auto_created=True)
@@ -32,7 +32,7 @@ class User(models.Model):
 
 # 项目表
 class Project(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=128, unique=True, verbose_name='项目名')
     describe = models.TextField(verbose_name='项目描述', default='该项目暂无描述')
     user_id = models.ForeignKey('User', verbose_name='所属用户', on_delete=models.CASCADE)
@@ -58,7 +58,7 @@ class Project(models.Model):
 
 # 上班日期表
 class WorkDays(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     project_id = models.ForeignKey('Project', on_delete=models.CASCADE, verbose_name='所属项目')
     monday = models.BooleanField(default=True, verbose_name='周一是否上班', auto_created=True)
     tuesday = models.BooleanField(default=True, verbose_name='周二是否上班', auto_created=True)
@@ -79,7 +79,7 @@ class WorkDays(models.Model):
 
 # 问题表
 class Question(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=128, verbose_name="问题标题")
     project_id = models.ForeignKey('Project', on_delete=models.CASCADE, verbose_name='所属项目')
     type = models.ForeignKey('QuestionType', on_delete=models.CASCADE, verbose_name='所属问题类型')
@@ -99,7 +99,7 @@ class Question(models.Model):
 
 
 class Answer(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     user_id = models.ForeignKey('User', on_delete=models.CASCADE, verbose_name='所属用户')
     question_id = models.ForeignKey('Question', on_delete=models.CASCADE, verbose_name='所属问题')
     question_title = models.CharField(max_length=128, verbose_name='问题标题')
@@ -114,7 +114,7 @@ class Answer(models.Model):
 
 
 class QuestionStatus(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     status = models.CharField(max_length=128, verbose_name='状态')
     project_id = models.ForeignKey('Project', on_delete=models.CASCADE, verbose_name='所属项目')
     project_name = models.CharField(max_length=128, default=project_id.name, auto_created=True, verbose_name='项目名')
@@ -128,7 +128,7 @@ class QuestionStatus(models.Model):
 
 
 class QuestionType(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     type = models.CharField(max_length=128, verbose_name='类型')
     project_id = models.ForeignKey('Project', on_delete=models.CASCADE, verbose_name='所属项目')
     project_name = models.CharField(max_length=128, default=project_id.name, auto_created=True, verbose_name='项目名')
@@ -142,7 +142,7 @@ class QuestionType(models.Model):
 
 
 class ProjectMission(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     mission_test = models.TextField(verbose_name='任务内容')
     mission_title = models.CharField(max_length=128, verbose_name='任务标题')
     pre_mission = models.ForeignKey('ProjectMission', on_delete=models.CASCADE, related_name='it_pre',
@@ -166,7 +166,7 @@ class ProjectMission(models.Model):
 
 
 class ProjectFile(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=128, verbose_name="文件名")
     description = models.TextField(verbose_name="文件描述")
     url = models.FileField(upload_to='uploads/', verbose_name="文件")
@@ -193,7 +193,7 @@ class ProjectMember(models.Model):
         (1, '管理员'),
         (2, '项目主')
     )
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     user_id = models.ForeignKey('User', on_delete=models.CASCADE, verbose_name='用户ID')
     user_name = models.CharField(max_length=128, verbose_name='用户名')
     project_id = models.ForeignKey('Project', on_delete=models.CASCADE, verbose_name='所属项目ID')
@@ -212,7 +212,7 @@ class ProjectMember(models.Model):
 
 
 class ProjectResource(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     type = models.CharField(max_length=128, verbose_name='资源类型')
     description = models.CharField(max_length=128, verbose_name='资源描述')
     cost = models.PositiveIntegerField(verbose_name='资源成本')
@@ -232,7 +232,7 @@ class ProjectResource(models.Model):
 
 
 class ProjectCalendar(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     project_id = models.ForeignKey('Project', on_delete=models.CASCADE, verbose_name='所属项目')
     user_id = models.ForeignKey('User', on_delete=models.CASCADE, verbose_name='所属用户')
     member_id = models.ForeignKey('ProjectMission', on_delete=models.CASCADE, verbose_name="所属项目成员ID")
