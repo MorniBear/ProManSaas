@@ -18,10 +18,10 @@ from django.urls import path, include
 from app_home import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),    # 后台管理
-    path('login/', views.login),    # 登录
+    path('admin/', admin.site.urls),  # 后台管理
+    path('', views.home, name='home'),  # home page
+    path('login/', views.login, name='login'),  # 登录
     path('register/', views.register),  # 注册
-    path('logout/', views.logout),  #注销
-    path('', views.index),    # 主页
-    path('captcha/', include('captcha.urls')) # 验证码
+    path('logout/', views.logout),  # 注销
+    path('captcha/', include('captcha.urls'))  # 验证码
 ]

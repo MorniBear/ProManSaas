@@ -2,44 +2,41 @@ from django.contrib.auth.hashers import make_password, check_password
 from app_home import models, forms
 from django.shortcuts import render, redirect
 
-
 # Create your views here.
 
 # 主页
 from app_home.models import User
 
 
-def index(request):
+def home(request):
     return render(request, 'app_home/home.html', locals())
 
 
 # 登录
 def login(request):
     if request.session.get('is_login', None):
-        return redirect("/index/")
+        return redirect("home")
     if request.method == 'GET':
         login_form = forms.UserForm()
         return render(request, 'app_home/login.html', locals())
     if request.method == 'POST':
         login_form = forms.UserForm(request.POST)
-        message = "请检查填写的内容！"
+        # error_email = "请检查填写的邮箱！"
+        # error_password = "请检查填写密码！"
         if login_form.is_valid():
-            username = login_form.cleaned_data['username']
-            password = login_form.cleaned_data['password']
-        if login_form.is_valid():
-            username = login_form.cleaned_data['username']
+            email = login_form.cleaned_data['email']
             password = login_form.cleaned_data['password']
             try:
-                user = models.User.objects.get(name=username)
+                user = models.User.objects.get(email=email)
                 if check_password(password, user.password):
                     request.session['is_login'] = True
                     request.session['user_id'] = user.id
                     request.session['user_name'] = user.name
-                    return redirect('/index/')
+                    return redirect('home')
                 else:
-                    message = "密码不正确！"
+                    error_password = "密码不正确！"
             except:
-                message = "用户不存在！"
+                error_email = "用户不存在！"
         return render(request, 'app_home/login.html', locals())
 
 
@@ -85,6 +82,6 @@ def register(request):
 def logout(request):
     if not request.session.get('is_login', None):
         # 如果本来就未登录，也就没有登出一说
-        return redirect("/index/")
+        return redirect("home")
     request.session.flush()
-    return redirect("/index/")
+    return redirect("home")
