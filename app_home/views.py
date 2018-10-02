@@ -67,6 +67,15 @@ def email(request):
 
 # 主页
 def home(request):
+    if request.session.get('is_login', None):
+        user = models.User.objects.get(id=request.session.get('user_id'))
+        request.session['user_name'] = user.name
+        request.session['head_icon'] = user.head_icon.url
+        request.session['notice'] = user.notice
+        request.session['un_answer'] = user.un_answer
+        request.session['answer_notice'] = user.answer_notice
+        request.session['new_mission'] = user.new_mission
+        request.session['deadline'] = user.deadline
     return render(request, 'app_home/home.html', locals())
 
 

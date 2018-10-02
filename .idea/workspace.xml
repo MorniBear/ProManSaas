@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7d955ec-d642-4046-889d-9b3b68c8e74a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sent_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f3f304f-e739-422d-8011-57590c9eeaf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f3f304f-e739-422d-8011-57590c9eeaf7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/MorniBear.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/MorniBear.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d69c311f-4c91-472c-8490-5493b6656b71.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProManSaas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProManSaas/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProManSaas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProManSaas/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_home/templates/app_home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/templates/app_home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_home/templates/app_home/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/templates/app_home/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_home/templates/app_home/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/templates/app_home/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_home/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,11 +109,12 @@
     <session id="1281440268">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,13 +123,13 @@
           <entry key="app_home_emailcheck" value="5" />
           <entry key="app_home_project" value="1" />
           <entry key="app_home_questiontype" value="1" />
-          <entry key="app_home_user" value="1" />
+          <entry key="app_home_user" value="2" />
           <entry key="auth_user" value="1" />
-          <entry key="html" value="20" />
+          <entry key="html" value="21" />
           <entry key="jpg" value="1" />
           <entry key="js" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="61" />
+          <entry key="py" value="62" />
           <entry key="pyi" value="1" />
           <entry key="rnc" value="2" />
           <entry key="ts" value="1" />
@@ -149,12 +139,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="12" />
-          <entry key="HTML" value="20" />
+          <entry key="Database Element" value="13" />
+          <entry key="HTML" value="21" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="61" />
+          <entry key="Python" value="62" />
           <entry key="PythonStub" value="1" />
           <entry key="RNG Compact" value="2" />
           <entry key="TypeScript" value="1" />
@@ -162,16 +152,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="16" />
+          <entry key="cell" value="21" />
           <entry key="html" value="3659" />
-          <entry key="py" value="3068" />
+          <entry key="py" value="3230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3659" />
-          <entry key="Python" value="3068" />
-          <entry key="Scratch" value="16" />
+          <entry key="Python" value="3230" />
+          <entry key="Scratch" value="21" />
         </counts>
       </usages-collector>
     </session>
@@ -181,27 +171,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="323">
+              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_process/views.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app_home/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="72" column="48" lean-forward="true" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1538491563089" expanded="true" signature="2345:2352" ph="..." />
+                <marker date="1538491563089" expanded="true" signature="2871:2876" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_home/views.py">
+        <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/604936671/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="93" column="69" lean-forward="true" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1538489549958" expanded="true" signature="2345:2352" ph="..." />
-                <marker date="1538489549958" expanded="true" signature="2370:2375" ph="..." />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -210,7 +213,7 @@
         <entry file="file://$PROJECT_DIR$/app_home/tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -218,7 +221,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_home/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="1144">
               <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -232,7 +235,16 @@
         <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-833">
+              <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -240,8 +252,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_home/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="156">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               <folding>
                 <marker date="1538469209103" expanded="true" signature="1487:1877" ph="..." />
               </folding>
@@ -253,25 +265,7 @@
         <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
-              <caret line="108" column="41" lean-forward="true" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_emailcheck">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+              <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -328,10 +322,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="62" />
-    <option name="y" value="291" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="x" value="61" />
+    <option name="y" value="290" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -443,7 +437,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/something/Web/Django/MyAppAboutLock" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
@@ -585,7 +579,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.17962466" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.1816354" />
       <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.24262735" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.117292225" side_tool="true" weight="0.18674698" />
@@ -596,7 +590,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.2284091" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4953083" weight="0.24548192" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="8" sideWeight="0.8827078" weight="0.3298193" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="8" sideWeight="0.8827078" weight="0.04066265" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.19793205" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -606,7 +600,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.10053619" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1347185" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
       <window_info anchor="right" id="Key Promoter X" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Api Debugger" order="6" />
@@ -652,17 +646,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="templates file" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_project" />
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/pymysql/err.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/1246693651D8956F770E091EF2B12FD4E7D4CFC928.jpg" />
     <entry file="file://$PROJECT_DIR$/requirement.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -685,7 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer" />
     <entry file="file://$PROJECT_DIR$/app_home/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -693,13 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Next.url">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Next.url" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -761,34 +737,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer" />
     <entry file="file://$PROJECT_DIR$/app_home/migrations/0002_auto_20181002_1608.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -826,10 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1538474083314" expanded="true" signature="149:150" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,13 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/auth_user" />
     <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/forms/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -861,24 +800,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_questiontype">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_questiontype" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="659" selection-start-line="659" selection-end-line="659" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -892,23 +818,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_emailcheck">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_emailcheck" />
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user" />
+    <entry file="file://$PROJECT_DIR$/app_process/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app_home/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_home/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
+        <state relative-caret-position="1144">
           <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -917,29 +841,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="108" column="41" lean-forward="true" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_process/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -950,23 +864,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_home/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="156">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding>
             <marker date="1538469209103" expanded="true" signature="1487:1877" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/604936671/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="93" column="69" lean-forward="true" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
+        <state relative-caret-position="312">
+          <caret line="72" column="48" lean-forward="true" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538489549958" expanded="true" signature="2345:2352" ph="..." />
-            <marker date="1538489549958" expanded="true" signature="2370:2375" ph="..." />
+            <marker date="1538491563089" expanded="true" signature="2345:2352" ph="..." />
+            <marker date="1538491563089" expanded="true" signature="2871:2876" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
