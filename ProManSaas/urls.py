@@ -21,7 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),  # 后台管理
     path('', views.home, name='home'),  # home page
     path('login/', views.login, name='login'),  # 登录
-    path('register/', views.register),  # 注册
-    path('logout/', views.logout),  # 注销
+    path('register/', views.register, name='register'),  # 注册
+    path('logout/', views.logout, name='logout'),  # 注销
+    path('email/', views.email, name='email'),
     path('captcha/', include('captcha.urls'))  # 验证码
 ]

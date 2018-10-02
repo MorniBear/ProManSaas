@@ -30,6 +30,18 @@ class User(models.Model):
         verbose_name_plural = "用户"
 
 
+class EmailCheck(models.Model):
+    email = models.EmailField(verbose_name='邮箱', unique=True)
+    code = models.CharField(max_length=6, verbose_name='验证码')
+    c_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
+    f_time = models.DateTimeField(auto_now=True, verbose_name="修改时间", )
+
+    class Meta:
+        ordering = ["-c_time"]
+        verbose_name = "邮箱验证码"
+        verbose_name_plural = "邮箱验证码"
+
+
 # 项目表
 class Project(models.Model):
     id = models.AutoField(primary_key=True)

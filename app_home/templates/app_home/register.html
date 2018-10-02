@@ -1,129 +1,157 @@
 {% extends 'base.html' %}
 {% block content %}
-<form class="needs-validation" novalidate>
-    <div class="form-row">
-        <div class="col-md-4 mb-3">
-            <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark"
-                   required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
+    <div class=" bg-dark border border-dark rounded panel panel-default d-lg-block d-none"
+         style="position: fixed;top: 15%; right: 5%;width: 26% ;">
+        <div class="panel-heading " style="margin-left: 5%;margin-top: 8%">
+            <h3 class="panel-title text-light">
+                账号注册
+            </h3>
         </div>
-        <div class="col-md-4 mb-3">
-            <label for="validationCustom02">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto"
-                   required>
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <label for="validationCustomUsername">Username</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <div>
+            <form class="needs-validation" action="{% url 'register' %}" method="post" novalidate>
+                {% csrf_token %}
+                <div class="form-group" style="margin-left: 8%;margin-top: 2%">
+                    <label for="inputName" class="text-light">用户名</label>
+                    {{ register_form.name }}
+                    <div class="invalid-feedback">请输入用户名</div>
+                    <small class="form-text text-danger">{{ error_name }}</small>
                 </div>
-                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
-                       aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                    Please choose a username.
+                <div class="form-group" style="margin-left: 8%;margin-top: -3%">
+                    <label for="inputEmail" class="text-light">电子邮箱</label>
+                    {{ register_form.email }}
+                    <div class="invalid-feedback">请输入正确的邮箱</div>
+                    <small id="error_email_id" class="form-text text-danger">{{ error_email }}</small>
+                    <div class="input-group mb-3" style="width: 85%">
+                        {{ register_form.code }}
+                        <div class="input-group-append">
+                            <button class="btn btn-warning" type="button" id="button-addon2"
+                                    data-loading-text="Loading...">发送验证码
+                            </button>
+                        </div>
+                        <div class="invalid-feedback">请输入验证码</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationCustom04">State</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-            <div class="invalid-feedback">
-                Please provide a valid state.
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-            <div class="invalid-feedback">
-                Please provide a valid zip.
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-                You must agree before submitting.
-            </div>
-        </div>
-    </div>
-    <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
+                <div class="form-group" style="margin-left: 8% ;margin-top: -3%">
+                    <label class="text-light" for="exampleInputPassword1">密码</label>
+                    {{ register_form.password }}
+                    <div class="invalid-feedback">请输入密码</div>
+                    {{ register_form.password_confirm }}
+                    <div class="invalid-feedback">请输入确定密码</div>
+                    <small class="form-text text-danger">{{ error_password }}</small>
+                </div>
+                <button style="margin-left: 8%;margin-bottom: 8%;margin-top: 0" type="submit" class="btn btn-primary">
+                    注册！
+                </button>
+                <a style="margin-bottom: 8%;margin-top:0%;margin-left: 5%;" class="btn btn-danger"
+                   href="{% url 'login' %}"
+                   role="button">返回登录</a>
 
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-        'use strict';
-        window.addEventListener('load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
+            </form>
+        </div>
+    </div>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+{% endblock %}
+{% block script %}
+    <script>
+        // using jQuery
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
                     }
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        }, false);
-    })();
-</script>
-{#<div style="margin: 15% 40%;">#}
-{#    <form action="/register/" method="post">#}
-{#        {% if message %}#}
-{#        <div>{{ message }}</div>#}
-{#        {% endif %}#}
-{#        {% csrf_token %}#}
-{##}
-{#        <h2 class="text-center">欢迎注册</h2>#}
-{#        <div>#}
-{#            {{ register_form.username.label_tag }}#}
-{#            {{ register_form.username}}#}
-{#        </div>#}
-{#        <div>#}
-{#            {{ register_form.password1.label_tag }}#}
-{#            {{ register_form.password1 }}#}
-{#        </div>#}
-{#        <div>#}
-{#            {{ register_form.password2.label_tag }}#}
-{#            {{ register_form.password2 }}#}
-{#        </div>#}
-{#        <div>#}
-{#            {{ register_form.email.label_tag }}#}
-{#            {{ register_form.email }}#}
-{#        </div>#}
-{#        <div>#}
-{#            {{ register_form.sex.label_tag }}#}
-{#            {{ register_form.sex }}#}
-{#        </div>#}
-{#        <div>#}
-{#            {{ register_form.captcha.errors }}#}
-{#            {{ register_form.captcha.label_tag }}#}
-{#            {{ register_form.captcha }}#}
-{#        </div>#}
-{##}
-{#        <div><input type="submit" value="提交"></div>#}
-{#    </form>#}
-{#</div>#}
-{% endblock%}
+                }
+            }
+            return cookieValue;
+        }
+
+        var csrftoken = getCookie('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // 这些HTTP方法不要求CSRF包含
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+    </script>
+    <script>
+        const isEmail = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+        $("#button-addon2").click(function () {
+            $("#error_email_id").text('');
+            let email = $("#inputEmail").val();
+            if (email === '') {
+                $("#error_email_id").text('邮箱不能为空');
+            }
+            else if (!(isEmail.test(email))) {
+                $("#error_email_id").text('邮箱格式不正确');
+            }
+            else {
+                $.post({% url 'email' %},
+                    {
+                        email: email
+                    },
+                    function (data, status) {
+                        if (data === "repeat") {
+                            $("#error_email_id").text('该邮箱已注册');
+                        }
+                        else if (data === "check") {
+                            $("#error_email_id").text('请检查邮箱');
+                        }
+                        else if (data === "short") {
+                            $("#error_email_id").text('发送时间太短');
+                        }
+                        else {
+                            let second = 59;
+                            $("#button-addon2").text("请等待(60s)").attr('disabled', true);
+                            {#$("#inputEmail").attr('disabled', true);#}
+                            $("#error_email_id").text(data);
+                            let time = setInterval(
+                                function () {
+                                    if (second > 0) {
+                                        let s_second = '' + second;
+                                        if (second < 10)
+                                            s_second = '0' + s_second;
+                                        $('#button-addon2').text("请等待(" + s_second + "s)");
+                                        second--;
+                                    } else {
+                                        $('#button-addon2').text("发送验证码").attr('disabled', false);
+                                        clearInterval(time);
+                                    }
+                                }, 1000);
+                        }
+                    });
+
+            }
+        });
+    </script>
+{% endblock %}

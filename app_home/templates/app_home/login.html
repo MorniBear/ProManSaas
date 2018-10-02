@@ -19,7 +19,9 @@
                     <label for="inputEmail" class="text-light">电子邮箱</label>
                     {{ login_form.email }}
                     <div class="invalid-feedback">请输入正确的邮箱</div>
-                    <div>{{ error_email }}</div>
+                    {% if error_email %}
+                    <small class="form-text text-danger">{{ error_email }}</small>
+                     {% endif %}
                     {#                    <input style="width: 85%" type="email" class="form-control" id="email"#}
                     {#                           aria-describedby="emailHelp"#}
                     {#                           placeholder="example@example.com">#}
@@ -28,7 +30,9 @@
                     <label class="text-light" for="exampleInputPassword1">密码</label>
                     {{ login_form.password }}
                     <div class="invalid-feedback">请输入密码</div>
-                    <div>{{ error_password }}</div>
+                    {% if error_password %}
+                    <small class="form-text text-danger">{{ error_password }}</small>
+                    {% endif %}
                     {#                    <input style="width: 85%" type="password" class="form-control" id="password"#}
                     {#                           placeholder="password">#}
                 </div>
@@ -40,8 +44,9 @@
                 <button style="margin-left: 8%;margin-bottom: 8%;margin-top: 5%" type="submit" class="btn btn-primary">
                     登录
                 </button>
-                <a style="margin-bottom: 8%;margin-top: 6%;margin-left: 5%;" class="btn btn-danger" href="/"
-                   role="button">返回</a>
+                <a style="margin-bottom: 8%;margin-top: 5%;margin-left: 5%;" class="btn btn-success"
+                   href="{% url 'register' %}"
+                   role="button">注册</a>
 
             </form>
         </div>
