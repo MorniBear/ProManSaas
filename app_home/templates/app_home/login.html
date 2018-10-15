@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block title %}ProMan--登录{% endblock %}
+
+
+{% block content %}
+
+    <div class=" bg-dark border border-dark rounded panel panel-default d-md-block d-none"
+         style="position: fixed;top: 25%; right: 5%;width: 26% ;">
+        <div class="panel-heading " style="margin-left: 5%;margin-top: 8%">
+            <h3 class="panel-title text-light">
+                账号登录
+            </h3>
+        </div>
+        <div>
+            <form class="needs-validation" action="{% url 'login' %}" method="post" novalidate>
+                {% csrf_token %}
+                <div class="form-group" style="margin-left: 8%;margin-top: 8%">
+
+                    <label for="inputEmail" class="text-light">电子邮箱</label>
+                    {{ login_form.email }}
+                    <div class="invalid-feedback">请输入正确的邮箱</div>
+                    {% if error_email %}
+                    <small class="form-text text-danger">{{ error_email }}</small>
+                     {% endif %}
+                    {#                    <input style="width: 85%" type="email" class="form-control" id="email"#}
+                    {#                           aria-describedby="emailHelp"#}
+                    {#                           placeholder="example@example.com">#}
+                </div>
+                <div class="form-group" style="margin-left: 8% ;margin-top: -2%">
+                    <label class="text-light" for="exampleInputPassword1">密码</label>
+                    {{ login_form.password }}
+                    <div class="invalid-feedback">请输入密码</div>
+                    {% if error_password %}
+                    <small class="form-text text-danger">{{ error_password }}</small>
+                    {% endif %}
+                    {#                    <input style="width: 85%" type="password" class="form-control" id="password"#}
+                    {#                           placeholder="password">#}
+                </div>
+                {#                <div class="form-check " style="margin-left: 8%">#}
+                {#                    <label class="form-check-label text-light" for="exampleCheck1">#}
+                {#                        <input type="checkbox" class="form-check-input "#}
+                {#                               id="exampleCheck1"><span class="badge badge-danger" style="margin-left: 20%;">记住我！</span></label>#}
+                {#                </div>#}
+                <button style="margin-left: 8%;margin-bottom: 8%;margin-top: 5%" type="submit" class="btn btn-primary">
+                    登录
+                </button>
+                <a style="margin-bottom: 8%;margin-top: 5%;margin-left: 5%;" class="btn btn-success"
+                   href="{% url 'register' %}"
+                   role="button">注册</a>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+{% endblock %}

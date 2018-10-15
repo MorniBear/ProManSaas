@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}ProMan--软件管理平台{% endblock %}
 
-</body>
-</html>
+
+{% block content %}
+    <p class="d-md-block d-none" style="position: fixed; bottom: -1%;right: 0">
+        <a class="btn btn-danger  btn-lg " href="#" role="button">继续上次项目</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">开始新的项目</a>
+        <a class="btn btn-warning btn-lg" href="#" role="button">查看所有项目</a>
+    </p>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
