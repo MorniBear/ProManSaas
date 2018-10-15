@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7d955ec-d642-4046-889d-9b3b68c8e74a" name="Default Changelist" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f3f304f-e739-422d-8011-57590c9eeaf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f3f304f-e739-422d-8011-57590c9eeaf7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d69c311f-4c91-472c-8490-5493b6656b71.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -440,7 +441,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -572,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537793113127</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="templates file">
+      <created>1537961564966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537961564966</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
