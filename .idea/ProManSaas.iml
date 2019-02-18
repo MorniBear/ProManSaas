@@ -24,6 +24,7 @@
     <orderEntry type="library" name="ie10-viewport-bug-workaround" level="application" />
     <orderEntry type="library" name="holder" level="application" />
     <orderEntry type="library" name="jquery-3.3.1.slim" level="application" />
+    <orderEntry type="library" name="gijgo" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
@@ -31,11 +32,8 @@
       <list>
         <option value="$MODULE_DIR$/app_question/templates" />
         <option value="$MODULE_DIR$/app_home/templates" />
-        <option value="$MODULE_DIR$/app_process/templates" />
-        <option value="$MODULE_DIR$/app_question/templates/app_question" />
-        <option value="$MODULE_DIR$/app_process/templates/app_process" />
-        <option value="$MODULE_DIR$/app_home/templates/app_home" />
         <option value="$MODULE_DIR$/templates" />
+        <option value="$MODULE_DIR$/app_process/templates" />
       </list>
     </option>
   </component>

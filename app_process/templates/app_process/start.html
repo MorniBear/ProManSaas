@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block overcontent %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">开始一个新项目</h1>
+            <p class="lead">根据提示来创建一个新的项目</p>
+            <hr class="my-4">
+            <form class="needs-validation" method="post" action="{% url 'start' %}" novalidate>
+                <div class="form-row">
+                    {% csrf_token %}
+                    <div class="col-md-6 mb-3">
+
+                        {# ------------------------------------------------------------------#}
+                        <label for="validationCustom01">项目名称</label>
+                        {{ project_form.project_name }}
+                        <div class="invalid-feedback">
+                            请填写项目名称
+                        </div>
+                        <small class="form-text text-danger"> {{ message }}</small>
+
+                    </div>
+
+                    <div class="col-md-3 mb-3 mr-5">
+                        <label for="inputState">项目状态</label>
+                        {{ project_form.project_state }}
+                        <div class="invalid-feedback">
+                            请填写项目名称
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+
+                        <label for="start_time">开始时间</label>
+                        {{ project_form.start_time }}
+                        <div class="invalid-feedback">
+                            请填写开始时间
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="pre_end_time">预计结束时间</label>
+                        {{ project_form.pre_end_time }}
+                        <div class="invalid-feedback">
+                            请填写结束时间
+                        </div>
+                    </div>
+                    <div class="col-md-9 mb-4">
+                        <label for="validationCustom02">项目描述</label>
+                        {{ project_form.project_description }}
+                        <div class="invalid-feedback">请填写项目描述</div>
+                    </div>
+                </div>
+                <button class="btn-lg btn-primary" type="submit">下一步</button>
+                {#                <a class="btn btn-warning" href="#" role="button">后退</a>#}
+            </form>
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script>
+        $('#start_time').datepicker(
+            {
+                format: 'yyyy-mm-dd',
+                modal: true,
+                footer: true,
+                uiLibrary: 'bootstrap4',
+                header: true,
+                maxDate: function () {
+                    return $('#pre_end_time').val();
+                }
+            });
+        $('#pre_end_time').datepicker(
+            {
+                format: 'yyyy-mm-dd',
+                modal: true,
+                footer: true,
+                uiLibrary: 'bootstrap4',
+                header: true,
+                minDate: function () {
+                    return $('#start_time').val();
+                }
+            });
+    </script>
+
+{% endblock %}

@@ -20,8 +20,8 @@
                     {{ login_form.email }}
                     <div class="invalid-feedback">请输入正确的邮箱</div>
                     {% if error_email %}
-                    <small class="form-text text-danger">{{ error_email }}</small>
-                     {% endif %}
+                        <small class="form-text text-danger">{{ error_email }}</small>
+                    {% endif %}
                     {#                    <input style="width: 85%" type="email" class="form-control" id="email"#}
                     {#                           aria-describedby="emailHelp"#}
                     {#                           placeholder="example@example.com">#}
@@ -31,7 +31,7 @@
                     {{ login_form.password }}
                     <div class="invalid-feedback">请输入密码</div>
                     {% if error_password %}
-                    <small class="form-text text-danger">{{ error_password }}</small>
+                        <small class="form-text text-danger">{{ error_password }}</small>
                     {% endif %}
                     {#                    <input style="width: 85%" type="password" class="form-control" id="password"#}
                     {#                           placeholder="password">#}

@@ -165,7 +165,7 @@ def register(request):
             new_user.true_name = true_name
             new_user.head_icon = head_icon
             new_user.save()
-            models.User.objects.filter(email=e_mail)
+            # models.User.objects.filter(email=e_mail)
             return redirect('login')
     register_form = forms.RegisterForm()
     return render(request, 'app_home/register.html', locals())

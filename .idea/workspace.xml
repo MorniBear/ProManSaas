@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7d955ec-d642-4046-889d-9b3b68c8e74a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app_process/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_process/templates/app_process/addmember.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_process/templates/app_process/addmission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_process/templates/app_process/project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_process/templates/app_process/projectlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projectbase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProManSaas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProManSaas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f3f304f-e739-422d-8011-57590c9eeaf7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6f3f304f-e739-422d-8011-57590c9eeaf7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d69c311f-4c91-472c-8490-5493b6656b71.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/MorniBear.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/MorniBear.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProManSaas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProManSaas/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/migrations/0002_auto_20181002_1608.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/migrations/0003_auto_20181002_1635.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/templates/app_home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/templates/app_home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/templates/app_home/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/templates/app_home/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_home/templates/app_home/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/templates/app_home/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_process/templates/app_process/process.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_process/templates/app_process/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_process/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_process/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sent_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/sent_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +38,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ProManSaas$sent_email.coverage" NAME="sent_email Coverage Results" MODIFIED="1538393647236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ProManSaas$sent_email.coverage" NAME="sent_email Coverage Results" MODIFIED="1544494058152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ProManSaas$tests.coverage" NAME="tests Coverage Results" MODIFIED="1538470723854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_home" />
   </component>
   <component name="DatabaseView">
@@ -31,18 +55,25 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="promansaas@39.106.55.189" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="promansaas@39.106.55.189" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="JXGL: database" type="bdf80c8a:MssqlImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="promansaas@39.106.55.189" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="promansaas: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="JXGL: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="JXGL: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -109,29 +140,55 @@
     <session id="1281440268">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="app_home_answer" value="3" />
-          <entry key="app_home_emailcheck" value="5" />
-          <entry key="app_home_project" value="1" />
-          <entry key="app_home_questiontype" value="1" />
-          <entry key="app_home_user" value="2" />
+          <entry key="app_home_answer" value="6" />
+          <entry key="app_home_emailcheck" value="6" />
+          <entry key="app_home_project" value="10" />
+          <entry key="app_home_projectcalendar" value="2" />
+          <entry key="app_home_projectfile" value="1" />
+          <entry key="app_home_projectmember" value="5" />
+          <entry key="app_home_projectmission" value="3" />
+          <entry key="app_home_projectresource" value="3" />
+          <entry key="app_home_question" value="2" />
+          <entry key="app_home_questionstatus" value="3" />
+          <entry key="app_home_questiontype" value="4" />
+          <entry key="app_home_user" value="6" />
+          <entry key="app_home_workdays" value="2" />
+          <entry key="auth_group" value="2" />
+          <entry key="auth_group_permissions" value="2" />
+          <entry key="auth_permission" value="2" />
           <entry key="auth_user" value="1" />
-          <entry key="html" value="21" />
+          <entry key="c" value="2" />
+          <entry key="css" value="1" />
+          <entry key="html" value="77" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="1" />
+          <entry key="js" value="10" />
           <entry key="png" value="1" />
-          <entry key="py" value="62" />
+          <entry key="py" value="156" />
           <entry key="pyi" value="1" />
           <entry key="rnc" value="2" />
+          <entry key="s" value="3" />
+          <entry key="s_backup" value="1" />
+          <entry key="sc" value="1" />
+          <entry key="sql" value="6" />
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
           <entry key="url" value="1" />
@@ -139,29 +196,36 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="13" />
-          <entry key="HTML" value="21" />
+          <entry key="CSS" value="1" />
+          <entry key="Database Element" value="67" />
+          <entry key="HTML" value="77" />
           <entry key="Image" value="2" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="62" />
+          <entry key="Python" value="156" />
           <entry key="PythonStub" value="1" />
           <entry key="RNG Compact" value="2" />
+          <entry key="Scratch" value="6" />
           <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="21" />
-          <entry key="html" value="3659" />
-          <entry key="py" value="3230" />
+          <entry key="cell" value="166" />
+          <entry key="html" value="6782" />
+          <entry key="js" value="32" />
+          <entry key="py" value="7336" />
+          <entry key="sql" value="3494" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3659" />
-          <entry key="Python" value="3230" />
-          <entry key="Scratch" value="21" />
+          <entry key="HTML" value="6782" />
+          <entry key="JavaScript" value="32" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="7336" />
+          <entry key="Scratch" value="3660" />
         </counts>
       </usages-collector>
     </session>
@@ -169,30 +233,39 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58baa822-ac72-440d-aacd-ec5a6e60c437/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="2288">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_home/views.py">
+        <entry file="file://$PROJECT_DIR$/sent_email.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_home/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="72" column="48" lean-forward="true" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1538491563089" expanded="true" signature="2345:2352" ph="..." />
-                <marker date="1538491563089" expanded="true" signature="2871:2876" ph="..." />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58baa822-ac72-440d-aacd-ec5a6e60c437/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://58baa822-ac72-440d-aacd-ec5a6e60c437/database/jxgl/schema/dbo/table/c">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -201,50 +274,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/604936671/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app_home/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_home/tests.py">
+        <entry file="file://$PROJECT_DIR$/app_home/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_home/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+            <state relative-caret-position="52">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <marker date="1538486443437" expanded="true" signature="65:67" ph="..." />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-833">
-              <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -252,20 +293,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_home/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <marker date="1538469209103" expanded="true" signature="1487:1877" ph="..." />
-              </folding>
+            <state relative-caret-position="2496">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_home/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/register.html">
+        <entry file="file://$PROJECT_DIR$/app_process/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+            <state relative-caret-position="312">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -275,8 +322,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -284,6 +331,10 @@
     <findStrings>
       <find>up</find>
       <find>upload</find>
+      <find>btn-default</find>
+      <find>icon</find>
+      <find>_id</find>
+      <find>id——id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -301,17 +352,31 @@
         <option value="$PROJECT_DIR$/app_home/templates/app_home/111111.html" />
         <option value="$PROJECT_DIR$/app_home/templates/app_home/counter.html" />
         <option value="$PROJECT_DIR$/app_home/templates/app_home/account.html" />
-        <option value="$PROJECT_DIR$/app_home/templates/app_home/login.html" />
-        <option value="$PROJECT_DIR$/app_home/templates/app_home/home.html" />
-        <option value="$PROJECT_DIR$/sent_email.py" />
         <option value="$PROJECT_DIR$/ProManSaas/settings.py" />
-        <option value="$PROJECT_DIR$/app_home/models.py" />
-        <option value="$PROJECT_DIR$/app_home/templates/app_home/register.html" />
-        <option value="$PROJECT_DIR$/app_home/forms.py" />
-        <option value="$PROJECT_DIR$/ProManSaas/urls.py" />
         <option value="$PROJECT_DIR$/app_home/tests.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/app_home/templates/app_home/login.html" />
+        <option value="$PROJECT_DIR$/app_process/templates/app_process/test.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_gijgo@1.9.10_js_gijgo.js" />
+        <option value="$PROJECT_DIR$/app_process/templates/app_process/start.html" />
+        <option value="$PROJECT_DIR$/app_home/templates/app_home/register.html" />
+        <option value="$PROJECT_DIR$/app_home/templates/app_home/home.html" />
+        <option value="$PROJECT_DIR$/app_process/templates/app_process/projectlist.html" />
         <option value="$PROJECT_DIR$/app_home/views.py" />
+        <option value="$PROJECT_DIR$/app_home/models.py" />
+        <option value="$PROJECT_DIR$/ProManSaas/urls.py" />
+        <option value="$PROJECT_DIR$/app_process/templates/app_process/addmember.html" />
+        <option value="$PROJECT_DIR$/app_process/views.py" />
+        <option value="$PROJECT_DIR$/app_process/forms.py" />
+        <option value="$PROJECT_DIR$/app_process/templates/app_process/addmission.html" />
+        <option value="$PROJECT_DIR$/app_process/templates/app_process/project.html" />
+        <option value="$PROJECT_DIR$/templates/projectbase.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93f5f619-99ec-4951-a5ff-37b97f9c5ad8/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/93f5f619-99ec-4951-a5ff-37b97f9c5ad8/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/58baa822-ac72-440d-aacd-ec5a6e60c437/console_1.sql" />
+        <option value="$PROJECT_DIR$/sent_email.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/58baa822-ac72-440d-aacd-ec5a6e60c437/console.sql" />
+        <option value="$PROJECT_DIR$/app_home/forms.py" />
       </list>
     </option>
   </component>
@@ -322,10 +387,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="61" />
-    <option name="y" value="290" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1055" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -344,7 +409,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>PyPep8Inspection</id>
+            <id>JSJQueryEfficiency</id>
           </State>
         </selected-state>
       </profile-state>
@@ -358,7 +423,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="ProManSaas" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,20 +455,20 @@
             <path>
               <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
-              <item name="app_home" type="462c0819:PsiDirectoryNode" />
+              <item name="app_question" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
+              <item name="app_question" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
-              <item name="app_home" type="462c0819:PsiDirectoryNode" />
+              <item name="app_question" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="app_home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
-              <item name="app_process" type="462c0819:PsiDirectoryNode" />
+              <item name="app_question" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
@@ -414,12 +489,17 @@
               <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProManSaas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProManSaas" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -428,7 +508,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql&#10;exasol" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;exasol&#10;sqlserver" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -436,11 +516,11 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -449,11 +529,11 @@
       <recent name="C:\Users\MorniBear\Desktop\ProManSaas\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ProManSaas\static\css" />
+      <recent name="C:\ProManSaas\static\js" />
       <recent name="C:\ProManSaas\media\uploads" />
       <recent name="C:\ProManSaas\static\image" />
       <recent name="C:\ProManSaas\static" />
-      <recent name="C:\Users\MorniBear\Desktop\ProManSaas\app_home" />
-      <recent name="C:\Users\MorniBear\Desktop\ProManSaas\app_process" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -548,8 +628,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tests" />
         <item itemvalue="Python.sent_email" />
+        <item itemvalue="Python.tests" />
         <item itemvalue="JavaScript Debug.home.html" />
       </list>
     </recent_temporary>
@@ -575,64 +655,72 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.1816354" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.28686327" />
       <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.24262735" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.117292225" side_tool="true" weight="0.18674698" />
-      <window_info anchor="bottom" id="Database Changes" order="1" sideWeight="0.49932975" weight="0.32954547" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.19235925" side_tool="true" weight="0.7921687" />
+      <window_info anchor="bottom" id="Database Changes" order="1" sideWeight="0.49932975" type="SLIDING" weight="0.32831326" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49932975" weight="0.34638554" />
+      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.49932975" weight="0.3253012" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.22740965" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.80764073" type="SLIDING" weight="0.32543445" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.19793205" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="11" visible="true" weight="0.37349397" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.0" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="13" sideWeight="0.8827078" type="SLIDING" weight="0.46084338" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3293944" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16487935" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.26119402" />
+      <window_info anchor="right" id="Key Promoter X" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Api Debugger" order="6" />
+      <window_info anchor="right" id="Remote Host" order="7" weight="0.3293092" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" weight="0.21715818" />
+      <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.24262735" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.19235925" side_tool="true" weight="0.7921687" />
+      <window_info anchor="bottom" id="Database Changes" order="1" sideWeight="0.49932975" type="SLIDING" weight="0.32831326" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49932975" weight="0.32613635" />
       <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.49932975" weight="0.32613635" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.2284091" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4953083" weight="0.24548192" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" order="8" sideWeight="0.8827078" weight="0.04066265" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.19793205" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.32978722" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.81626505" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.22740965" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.80764073" type="SLIDING" weight="0.325723" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.19793205" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.37349397" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.0" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="13" sideWeight="0.8827078" type="SLIDING" weight="0.46084338" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3293944" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1347185" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.18257262" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
       <window_info anchor="right" id="Key Promoter X" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Api Debugger" order="6" />
-      <window_info anchor="right" id="Remote Host" order="7" weight="0.3297587" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.17761394" />
-      <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.24262735" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067025" side_tool="true" weight="0.2560241" />
-      <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32826748" />
-      <window_info anchor="bottom" id="Python Console" order="3" weight="0.32680723" />
-      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.22895126" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" weight="0.32680723" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49932975" weight="0.3810241" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.19793205" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.32978722" />
-      <window_info anchor="bottom" id="Database Console" order="13" visible="true" weight="0.18373494" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3293944" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
-      <window_info anchor="right" id="Key Promoter X" order="5" weight="0.3297587" />
-      <window_info anchor="right" id="Api Debugger" order="6" />
-      <window_info anchor="right" id="Remote Host" order="7" />
+      <window_info anchor="right" id="Remote Host" order="7" weight="0.3293092" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,297 +734,323 @@
     <option name="LAST_COMMIT_MESSAGE" value="templates file" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/media/1246693651D8956F770E091EF2B12FD4E7D4CFC928.jpg" />
-    <entry file="file://$PROJECT_DIR$/requirement.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/utils/autoreload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5538">
-          <caret line="224" selection-start-line="224" selection-end-line="224" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/core/management/commands/runserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2704">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Next.url" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="607" column="22" selection-start-line="607" selection-start-column="22" selection-end-line="607" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="524" selection-start-line="524" selection-end-line="524" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/core/handlers/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2522">
-          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/xpath.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="238" column="8" selection-start-line="238" selection-start-column="8" selection-end-line="238" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProManSaas/wsgi.py">
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/core-scripting.rnc">
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/template/defaulttags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        <state relative-caret-position="51">
+          <caret line="623" column="32" lean-forward="true" selection-start-line="623" selection-start-column="32" selection-end-line="623" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
+    <entry file="file://$PROJECT_DIR$/ProManSaas/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProManSaas/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="9343" selection-start-line="9343" selection-end-line="9343" />
+        <state relative-caret-position="-1821" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/604936671/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="5391" column="8" selection-start-line="5391" selection-start-column="8" selection-end-line="5391" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="384" column="8" selection-start-line="384" selection-start-column="8" selection-end-line="384" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_project">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.3.1.slim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="6970" selection-start-line="6970" selection-end-line="6970" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="152" column="16" lean-forward="true" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/db/models/sql/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="1127" column="40" selection-start-line="1127" selection-start-column="40" selection-end-line="1127" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_projectresource">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_projectmission">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_projectmember">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/db/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1404">
+          <caret line="87" column="8" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/templates/app_process/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1742">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/templates/app_process/projectlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/templates/app_process/addmember.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5018">
+          <caret line="193" column="8" selection-start-line="193" selection-start-column="8" selection-end-line="193" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/templates/app_process/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/projectbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a2aa198d-ed5a-4110-8a1e-f54b1619f29c/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93f5f619-99ec-4951-a5ff-37b97f9c5ad8/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/93f5f619-99ec-4951-a5ff-37b97f9c5ad8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProManSaas/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_question/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app_process/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_process/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_process/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="273" column="4" selection-start-line="273" selection-start-column="4" selection-end-line="273" selection-end-column="4" />
+    <entry file="das://58baa822-ac72-440d-aacd-ec5a6e60c437/database/educ/schema/dbo/table/s">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_answer" />
-    <entry file="file://$PROJECT_DIR$/app_home/migrations/0002_auto_20181002_1608.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app_home/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/uploads/force.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/forms/widgets.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="290" column="12" lean-forward="true" selection-start-line="290" selection-start-column="12" selection-end-line="290" selection-end-column="12" />
+        <state relative-caret-position="545">
+          <caret line="121" column="58" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/contrib/auth/hashers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+    <entry file="das://58baa822-ac72-440d-aacd-ec5a6e60c437/database/jxgl/schema/dbo/table/s_backup">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="%%physloc%%" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/conf/__init__.py">
+    <entry file="das://58baa822-ac72-440d-aacd-ec5a6e60c437/database/jxgl/schema/dbo/table/s">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://58baa822-ac72-440d-aacd-ec5a6e60c437/database/jxgl/schema/dbo/table/sc">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="%%physloc%%" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_process/templates/app_process/addmission.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="2288">
+          <caret line="88" column="27" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58baa822-ac72-440d-aacd-ec5a6e60c437/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2288">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sent_email.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_home/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/58baa822-ac72-440d-aacd-ec5a6e60c437/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://58baa822-ac72-440d-aacd-ec5a6e60c437/database/jxgl/schema/dbo/table/c">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_home/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sent_email.py">
+    <entry file="file://$PROJECT_DIR$/app_home/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="1420" selection-start-line="1420" selection-end-line="1420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProManSaas/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/auth_user" />
-    <entry file="file://$USER_HOME$/Desktop/something/Web/Django/ProManSaas/venv/Lib/site-packages/django/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="182" column="8" selection-start-line="182" selection-start-column="8" selection-end-line="182" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_questiontype" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="659" selection-start-line="659" selection-end-line="659" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProManSaas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="52">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding>
-            <element signature="e#634#666#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_emailcheck" />
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user" />
-    <entry file="file://$PROJECT_DIR$/app_process/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1538486443437" expanded="true" signature="65:67" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_home/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <marker date="1538469209103" expanded="true" signature="1487:1877" ph="..." />
-          </folding>
+        <state relative-caret-position="2496">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/604936671/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="237" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/templates/app_home/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
-          <caret line="24" column="112" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_home/views.py">
+    <entry file="file://$PROJECT_DIR$/app_process/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="72" column="48" lean-forward="true" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1538491563089" expanded="true" signature="2345:2352" ph="..." />
-            <marker date="1538491563089" expanded="true" signature="2871:2876" ph="..." />
-          </folding>
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f3f304f-e739-422d-8011-57590c9eeaf7/schema/promansaas/table/app_home_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/app_home/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
         </state>
       </provider>
     </entry>

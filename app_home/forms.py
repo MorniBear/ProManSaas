@@ -40,7 +40,7 @@ class RegisterForm(forms.Form):
                                        widget=forms.PasswordInput(
                                            attrs={"aria-describedby": 'button-addon2',
                                                   'id': 'inputPasswordConfirm', 'required': 'required',
-                                                  'class': 'form-control',
+                                                'class': 'form-control',
                                                   'style': 'width: 85%;margin-top: 1%',
                                                   'placeholder': '确认密码'}))
     code = forms.CharField(max_length=128,

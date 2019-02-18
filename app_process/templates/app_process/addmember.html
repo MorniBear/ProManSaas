@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block overcontent %}
+    <!--suppress ALL -->
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="display-4">
+                <span class="badge badge-warning"> {{ project.name }}</span>
+            </h3>
+            <p class="lead ">邀请你的队员们，也可以跳过这一项！
+                {#                    -----------------------------------------------------------------#}
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    添加成员
+                </button>
+
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">添加成员</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-row needs-validation" action="{% url 'add_member' %}"
+                                  method="post" novalidate>
+                                {% csrf_token %}
+                                <div class="form-group col-md-6" style="width: 50%">
+                                    <label for="username_group" class="col-form-label">用户名</label>
+                                    <div id="username_group" class="input-group mb-3">
+                                        {{ member_form.user_name }}
+
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button"
+                                                    id="search">搜索
+                                            </button>
+                                        </div>
+
+                                        <div class="invalid-feedback">
+                                            请填写用户名
+                                        </div>
+                                    </div>
+                                    <small id="username_notice" class="form-text"></small>
+                                </div>
+                                <div class="form-group col-md-6" style="width: 30%">
+                                    <label for="power" class="col-form-label">权限</label>
+                                    {{ member_form.user_power }}
+                                </div>
+                                <div class="form-group col-md-8">
+
+                                </div>
+                                <div class="form-group col-md-4 justify-content-end">
+                                    <button type="button" id="cancel" class="btn btn-secondary"
+                                            data-dismiss="modal">取消
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">确定</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {#                    ----------------------------------------------------------------------------------#}
+
+
+            </p>
+            <hr class="my-4">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-3  mb-3">
+
+                    {# ------------------------------------------------------------------#}
+                    <h5>项目状态： <span class="badge badge-warning">{{ project.get_status_display }}</span></h5>
+
+                </div>
+                <div class="col-md-3  mb-3">
+
+                    {# ------------------------------------------------------------------#}
+                    <h5>我的权限： <span class="badge badge-warning">{{ power }}</span></h5>
+                    <!-- Button trigger modal -->
+
+
+                </div>
+                <div class="col-md-6  mb-3 shadow-sm p-3 mb-5 bg-white rounded" style="height: 500px">
+                    <div class="row">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">序号</th>
+                                <th scope="col">用户名</th>
+                                <th scope="col">权限</th>
+
+                                <th scope="col">更改权限</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            {% for member in members %}
+                                <tr>
+                                <th scope="row">{{ forloop.counter }}</th>
+                                <td>{{ member.user_name }}</td>
+                                <td> {{ member.get_member_power_display }}</td>
+                                {# 改成Button#}
+                                <td>更改权限 删除</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <a class="btn-lg btn-primary" href="{% url 'add_mission' %}" role="button">下一步</a>
+                    <a class="btn-lg btn-danger" href="{% url 'add_mission' %}" role="button">跳过</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+
+
+                        $('#username_notice').attr("class", "form-text text-danger").text("");
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script>
+        $('#search').click(function () {
+            if ($('#search').text() === "取消") {
+                $('#username').attr("readonly", false);
+                $('#search').text("搜索");
+                return;
+            }
+
+            let username = $('#username').val();
+            $.post("{% url 'add_member' %}", {
+                name: username,
+            }, function (date) {
+                if (date === "none") {
+                    $('#username_notice').attr("class", "form-text text-danger").text("用户名不能为空")
+                }
+                else if (date === "notexist") {
+                    $('#username_notice').attr("class", "form-text text-danger").text("用户不存在")
+                }
+                else if (date === "has") {
+                    $('#username_notice').attr("class", "form-text text-danger").text("用户已经在团队里面")
+
+                }
+                else if (date === "ok") {
+                    $('#username_notice').attr("class", "form-text text-success").text("邀请成功");
+                    $('#username').attr("readonly", "readonly");
+                    $('#search').text("取消")
+
+                }
+            });
+
+        })
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+{% endblock %}
